@@ -79,7 +79,10 @@ mkdir -p .claude/hooks
 #### 2. 复制脚本
 
 ```bash
-cp .claude/skills/pre-approval-report-zh/scripts/preapproval.cjs .claude/hooks/preapproval.cjs
+# 从克隆的仓库目录复制
+cp preapproval.cjs .claude/hooks/preapproval.cjs
+# 或者直接下载
+curl -o .claude/hooks/preapproval.cjs https://raw.githubusercontent.com/air56/claude-cn-summary/main/preapproval.cjs
 ```
 
 #### 3. 配置 settings.json
