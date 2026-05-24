@@ -11,7 +11,7 @@ description: 中文变更摘要审批报告。当用户想要在 Claude Code 每
 
 ## 工作原理
 
-- 使用 `PermissionRequest` 钩子在每次审批请求时附加中文变更摘要
+- 使用 `PermissionRequest` hook在每次审批请求时附加中文变更摘要
 - Hook 脚本自动提取变更信息，生成中文 Markdown 报告
 - 直接输出文本内容，Claude Code 会自动将其附加到审批弹窗旁
 
